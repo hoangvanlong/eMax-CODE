@@ -4,16 +4,34 @@
 //////////////////////////////////////
 
 section.emax-login
-	min-height: 550px
-	display: flex
-	align-items: center
 	.item
+		+pad(2rem 0 1.5rem 0)
+		display: flex
+		flex-direction: column
 		.h2
 			color: color-get($mau, do-1)
-		.table
-			th
-				padding-left: 0
-				border-top: 0
-			td
-				border-top: 0
-			
+			margin-bottom: 1rem
+			text-align: center
+		.box-content
+			+pad(0 1rem)
+			display: flex
+			flex-direction: column
+			justify-content: center
+			.table
+				th
+					padding-left: 0
+					border-top: 0
+				td
+					border-top: 0
+			.btn-more
+				width: 168px
+				align-self: center
+		&:first-child
+			height: 168px
+	+media-breakpoint-up(lg)
+		display: flex
+		align-items: center
+		.item
+			.box-content
+				.btn-more
+					align-self: flex-end

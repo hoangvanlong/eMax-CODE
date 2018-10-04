@@ -1,9 +1,11 @@
-section.emax-login(bg-img="./img/emax/home/body.png")
+section.emax-login(bg-img-responsive="./img/emax/home/body.png" bg-img-responsive-md="./img/emax/home/body.png" bg-img-responsive-lg="./img/emax/home/body.png" bg-pos="center center")
 	.container
 		.row.d-flex.justify-content-end
-			.col-5
-				.item
-					h2.h2 Thông tin bảo hành
+			.col-12.item.d-lg-none(bg-img="./img/emax/home/body.png" bg-pos="left center" bg-size="900px")
+				
+			.col-12.item.col-lg-5
+				h2.h2 Thông tin bảo hành
+				.box-content
 					table.table
 						tbody
 							tr
