@@ -1,8 +1,23 @@
 {
     "SETUP": {
-        "index": {
+        "login": {
             "body": [
-                "carousel/c-3"
+                "login"
+            ]
+        },
+        "information": {
+            "body": [
+                "information"
+            ]
+        },
+        "header": {
+            "body": [
+                "header"
+            ]
+        },
+        "footer": {
+            "body": [
+                "footer"
             ]
         }
     }
